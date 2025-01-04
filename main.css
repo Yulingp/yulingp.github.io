@@ -1,0 +1,228 @@
+body {
+  margin:0;
+  font-family:'Segoe UI', 'Helvetica', sans-serif;
+  line-height: 1.5;
+    }
+
+* {box-sizing: border-box;}
+
+nav, header, main {
+  margin-left:7%;
+  margin-right:7%;
+}
+
+nav, footer {text-align:center;}
+
+header {margin-top:150px;}
+  @media screen and (min-width:600px) {
+    header {margin-top:160px;}
+  }
+
+footer {margin-top:80px; padding:20px;}
+
+.secspacing {margin-top:80px;}
+  @media screen and (min-width:600px) {
+    .secspacing {margin-top:100px;}
+  }
+
+.indexheader {text-align:center;} /*Applies to Homepage*/
+
+
+/*general*/
+
+.lime {color:#a3f400;}
+.pink {color:#ff92a5;}
+
+.hidden {display: none;}
+hr {border:0; border-top:1px solid #a3f400;}
+
+
+/*text*/
+h1,h2,h3,h4,h5,h6 {font-weight:400;}
+h1{font-size:36px}
+h2{font-size:30px}
+h3{font-size:24px}
+h4{font-size:20px}
+h5{font-size:18px}
+h6{font-size:16px}
+
+header h2 {font-size:16px;}
+  @media screen and (min-width:600px) {
+    header h2 {font-size:20px;}
+    }
+
+cite {font-style: italic;}
+
+.art-title {
+  font-size: 15px; 
+  line-height:1.5; 
+  text-align:center;
+  margin-bottom:36px;
+  } /*Used on the Art-Gallery page*/
+
+.clickimage {
+  text-transform:uppercase;
+  color:#ff92a5;
+  }
+
+.cn-name {font-size:24px;}
+
+
+/*buttons*/
+
+a.button-pink1:link, a.button-pink1:visited {
+  color: white;
+  background-color: #ff92a5;
+
+  margin-top:10px;
+  font-size:18px;
+  padding: 8px 18px;
+  border-style:solid;
+  border-width:1px;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.button-pink1:hover, a.button-pink1:active {
+  color: #ff92a5;
+  background-color: white;
+  border-color:#ff92a5;
+}
+
+a.button-pink2:link, a.button-pink2:visited {
+  color: #ff92a5;
+  background-color: white;
+
+  margin-top:10px;
+  font-size:18px;
+  padding: 8px 18px;
+  border-style:solid;
+  border-width:1px;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.button-pink2:hover, a.button-pink2:active {
+  color: white;
+  background-color: #ff92a5;
+  border-color:#ff92a5;    /*make sure button size remains the same*/
+}
+
+a.button-lime1:link, a.button-lime1:visited {
+  color: white;
+  background-color: #a3f400;
+
+  margin-top:10px;
+  font-size:18px;
+  padding: 8px 18px;
+  border-style:solid;
+  border-width:1px;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.button-lime1:hover, a.button-lime1:active {
+  color: #a3f400;
+  background-color: white;
+  border-color:#a3f400;
+}
+
+a.button-lime2:link, a.button-lime2:visited {
+  color: #a3f400;
+  background-color: white;
+
+  margin-top:10px;
+  font-size:18px;
+  padding: 8px 18px;
+  border-style:solid;
+  border-width:1px;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.button-lime2:hover, a.button-lime2:active {
+  color: white;
+  background-color: #a3f400;
+  border-color:#a3f400;    /*make sure button size remains the same*/
+}
+
+
+/*links*/
+a:link {text-decoration: none;}
+
+.pinktolime:link {color:#ff92a5;}
+.pinktolime:visited {color:#ff92a5;}
+.pinktolime:hover {color:#a3f400;}
+.pinktolime:active {color:#ff92a5;}
+
+.limetopink:link {color:#a3f400;}
+.limetopink:visited {color:#a3f400;}
+.limetopink:hover {color:#ff92a5;}
+.limetopink:active {color:#a3f400;}
+
+
+/*navigation bar*/
+
+.topnav {
+  position:fixed; 
+  top:0;
+  width:86%;
+  overflow:hidden;
+  background-color:rgba(255, 255, 255, 0.85);
+}
+
+.topnav a {
+  display:inline-block;
+  text-align:center;
+  color:black;
+  font-size: 17px;
+  padding:0;
+  margin:10px;
+  text-decoration:underline;
+}
+
+@media screen and (min-width:600px) {
+.topnav a {
+  font-size: 18px; 
+  padding: 10px 5px; 
+  }
+}
+
+.topnav a:visited {color: black;}
+
+.topnav a:hover:not(.active) {
+  color:#ff92a5;
+}
+
+.topnav a.active {
+  border-bottom:solid;
+}
+
+.div1 {display:block; height:38px; margin:5px auto 0px; /*to reduce distance btwn div1 and div2*/ }
+  @media screen and (min-width:600px) {
+    .div1 {display:inline-block; float: left; margin-top:0px;}
+  }
+
+.div2 {display:block;}
+  @media screen and (min-width:600px) {
+    .div2 {display:inline-block; float: right;}
+  }
+
+
+/*Clickable drawings*/
+.wrapper a img:hover {width:99%;}
+
+
+/*Icons on on footer*/
+.social {width:35px; margin:0px 7px;}
+
+
+/* GTM buttons*/
+.gtmIG { ;}
+.gtmTT { ;}
+.gtmET { ;}
+.gtmEMAIL { ;}
