@@ -53,6 +53,12 @@ header h2 {font-size:16px;}
 
 cite {font-style: italic;}
 
+.serif { 
+  font-family: Georgia, Times, serif;
+  font-weight: 400;
+  font-style:italic;
+}
+
 .art-title {
   font-size: 15px; 
   line-height:1.5; 
@@ -62,6 +68,7 @@ cite {font-style: italic;}
 
 .clickimage {
   color:#ff92a5;
+  font-family: Georgia, Times, Serif;
   }
 
 .cn-name {font-size:24px;}
@@ -172,6 +179,7 @@ a:link {text-decoration: none;}
   width:86%;
   overflow:hidden;
   background-color:rgba(255, 255, 255, 0.85);
+  z-index: 1000; /* Ensures nav stays above other content */
 }
 
 .topnav a {
