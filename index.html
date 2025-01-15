@@ -26,7 +26,41 @@
   .img {
   margin-bottom:20px;
   border-radius:10px;
-  max-width:100%;}
+  max-width:100%;
+  }
+
+  /* Tooltip styling */
+  [data-tooltip] {
+            position: relative;
+            display: inline-block;
+        }
+
+  [data-tooltip] img {
+    display: block;
+    width:100%;
+    height: auto;
+    }
+
+        [data-tooltip]:before {
+            content: attr(data-tooltip);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #584664;
+            color: white;
+            padding: 6px 10px;
+            border-radius: 4px;
+            opacity: 0;
+            visibility: hidden;
+            z-index: 1;
+            transition: opacity 1s;
+        }
+
+        [data-tooltip]:hover:before {
+            opacity: 0.75;
+            visibility: visible;
+        }
 
   </style>
 
@@ -71,30 +105,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div> <!-- Artwork images-->
         <div class="wrapper" id="r01">
           <div class="left">
-            <a target="_self" href="./home/boris.html">
+            <a target="_self" href="./home/boris.html" data-tooltip="Title: Boris. 2023. Fantastical color pencil drawing.">
             <img class="img" src="./images/artworks/art-boris-yuling-peng.webp" alt="Colored pencil art. A person about to jump into the mysterous universe with shiny stars">
             </a>
           </div>
           <div class="right">
-            <a target="_self" href="./home/proud-journey.html">
+            <a target="_self" href="./home/proud-journey.html" data-tooltip="Title: Proud Journey. 2022. Fantastical color pencil drawing.">
             <img class="img" src="./images/artworks/art-proud-journey-yuling-peng.webp" alt="In a golden desert scene, a person with a small backpack and some wounds stands in the sand, looking back at her footprint with a smile. The footprint traces far back.">
             </a>
           </div>
         </div>
-
-        <div class="wrapper" id="r02" style="display:none;">
-          <div class="left">
-            <a target="_self" href="./home/summer-at-russalka-beach.html">
-            <img class="img" src="./images/artworks/art-summer-at-russalka-beach-yuling-peng.webp" alt="A blossoming peony standing in the ocean, by the Russalka beach in Estonia.">
-            </a>
-          </div>
-          <div class="right">
-            <a target="_self" href="./home/borderless-love.html">
-            <img class="img" src="./images/artworks/art-rabbit-hole2.png" alt="Abstract colored pencil drawing. Human hands of various colors hold one another, forming a beautiful hand chain. In the center of the chain, a hand holds a blossoming peace lily flower.">
-            </a>
-          </div>
-        </div>
-
       </div> <!-- Artwork images end-->
 
       <div>
